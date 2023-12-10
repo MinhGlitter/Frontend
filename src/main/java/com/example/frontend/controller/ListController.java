@@ -85,7 +85,7 @@ public class ListController implements Initializable {
     // Go to NFT when click NFT Button
     @FXML
     private void goToBlog(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Blog.fxml")); // Khong co link fxml nen dung tam
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/frontend/Blog.fxml")); // Khong co link fxml nen dung tam
         Scene scene = new Scene(loader.load(), 800, 700); // Adjust the size as needed
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
